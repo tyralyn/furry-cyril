@@ -24,6 +24,7 @@ typedef struct variableinfo {
 // Defines a variable table. Maps from a string (variable
 // name) to a variable info.
 typedef std::map<std::string, VariableInfo> VariableTable;
+//make
 
 // Defines the information for a method. This will be the
 // data in the method table (each method will map to one

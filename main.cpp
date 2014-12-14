@@ -9,12 +9,11 @@ extern int yyparse();
 ASTNode* astRoot;
 
 int main(void) {
-    yydebug = 0; // Set this to 1 if you want the parser to output debug information and parse processes
-    
+    yydebug = 0; // Set this to 1 if you want the parser to output debug information and parse processe
     astRoot = NULL;
-    
+    //std::cout<<"1\n";
     yyparse();
-    
+    //std::cout<<"2\n";
     if (astRoot) {
         Symbol* symbol = new Symbol();
         astRoot->accept(symbol);

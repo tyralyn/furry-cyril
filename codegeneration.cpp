@@ -3,7 +3,7 @@ int DEBUG2 = 0;
 // CodeGenerator Visitor Functions: These are the functions
 // you will complete to generate the x86 assembly code. Not
 // all functions must have code, many may be left empty.
-//
+//d
 // NOTE: You only need to complete code for expressions,
 // assignments, returns, and local variable space allocation.
 // Refer to project description for exact details.
@@ -18,7 +18,9 @@ void CodeGenerator::visitProgramNode(ProgramNode* node) {
 
 void CodeGenerator::visitClassNode(ClassNode* node) {
     // WRITEME: Replace with code if necessary
+  //std::cout << "IN CLSSNDE\n";
   currentClassName = node->identifier_1->name;
+  //std::cout << "before checking stuff\n";
   currentClassInfo = (*classTable)[currentClassName];
   if (DEBUG2 == 1) std::cout << "CHECKING MAP FOR PRESENCE OF CLASS: "<< classTable->count(currentMethodName)  << std::endl;
   if (DEBUG2 == 1) std::cout << "CURRENT CLASS NAME: " << currentClassInfo.membersSize << std::endl;

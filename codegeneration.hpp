@@ -8,12 +8,14 @@
 // the AST and generate x86 assembly code. You will do all
 // your implementation of the code generation in the visitor
 // functions for this visitor.
-//
+//confusem
 // NOTE: This visitor will visit _after_ the Symbol visitor,
 // which means the symbol table will already be completely
 // constructed when generating code. You will need to use
 // the symbol table when generating code.
 class CodeGenerator : public Visitor {
+private:
+  //int asd;
 public:
   // This member is the ClassTable pointer for the symbol
   // table. The main file sets this appropraitely to the
@@ -22,7 +24,7 @@ public:
   //
   // NOTE: Remember that it is a _pointer_.
   ClassTable* classTable;
-  
+  //int i;
   // These members represent the current class and method
   // names (which class we are inside and which method we are
   // inside at any point in the code generation) as well

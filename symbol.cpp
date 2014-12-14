@@ -30,7 +30,7 @@ if (DEBUG==1) cout<<"visitingClassNode\n";
  //currentLocalOffset = -4;
   //currentParameterOffset = 8;
   currentVariableTable = &(c.members);
-    node->visit_children(this);  
+  node->visit_children(this);  
   if (classTable->count(className)<1)classTable->insert(std::pair<std::string,ClassInfo>(className,c));
   //node->visit_children(this);  
   //c.membersSize = v.size()*4;
